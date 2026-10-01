@@ -1,32 +1,35 @@
 # Event posters
 
-Static event poster landing page for NALICO and NAFICO.
+Static registration landing page and poster gallery for NALICO and NAFICO.
 
-## Current status
+## Visitor flow
 
-The landing page displays the supplied property insurance poster, with a full-size viewer, original PNG download, and contact links taken from the poster. Two additional poster slots are marked coming soon. The event name and remaining two posters have not yet been supplied.
+The QR code points to `https://densdanielp-max.github.io/event-posters/`.
+`index.html` embeds Microsoft Forms and provides a direct form link as a fallback.
+The form requires full name, email address (email format validation) and phone number.
+After submission, its thank-you message links to `posters.html`.
 
-## GitHub Pages setup
+Responses are stored in the form owner's Microsoft account, not in GitHub. Retrieve them in Microsoft Forms > NALICO & NAFICO — Event Poster Registration > Responses > Insights and actions > Open results in Excel. The adjacent dropdown offers Download a copy. Never upload response workbooks or attendee information to this public repository.
 
-Repository: `densdanielp-max/event-posters`.
+This is a registration step in the normal visitor flow, not access control: the static gallery and image URLs remain publicly accessible. Microsoft Forms does not provide this page with a verified submission signal, so the site does not use an unverified unlock button or pretend to authenticate visitors.
 
-1. Publish this folder's files to the repository's `main` branch.
-2. In repository Settings > Pages, select Deploy from a branch, `main`, and `/ (root)`.
-3. Verify the public URL provided by GitHub before generating the final QR code.
+## Gallery
 
-Live project URL: `https://densdanielp-max.github.io/event-posters/`. The existing QR code points directly to this URL.
+`posters.html` displays the supplied property insurance poster with a full-size viewer, original PNG download and contact links taken from the poster. Two additional poster slots are marked coming soon. The event name and remaining two posters have not yet been supplied.
 
-## Add the posters
+Add the remaining approved poster files and update `posters.html` with their real titles, previews and view/download links. Update the available count and replace the two coming-soon slots.
 
-Add the remaining approved poster files and update `index.html` with their real titles, previews, and view/download links. Update the available count and replace the two coming-soon slots. Keep the repository name and public page URL stable so the printed QR remains usable after content updates.
+## Deployment
 
-## Files and verification
+Repository: `densdanielp-max/event-posters`. GitHub Pages publishes `main` from `/ (root)` with HTTPS. Keep the repository name and landing URL stable so the existing QR remains usable.
 
+## Files
+
+- `index.html`, `registration.css`: registration landing page and responsive form layout.
+- `posters.html`: poster gallery.
 - `property-insurance.png`: original 2160 x 2700 poster, copied without editing.
-- `logo.png` and `fonts.css`: matching assets from the supplied poster's source folder.
-- `style.css`: responsive page styles.
-- `app.js`: accessible native dialog viewer; direct image links remain usable without JavaScript.
-
-Verified at desktop, 390 px, and 320 px viewport widths; checked poster enlargement, Escape to close, focus restoration, and original download integrity. Contact links use the phone numbers, email, and WhatsApp number shown on the supplied poster; no messages or calls were sent.
+- `logo.png`, `fonts.css`: matching assets from the poster source folder.
+- `style.css`: shared responsive styles.
+- `app.js`: accessible native dialog viewer; direct image links work without JavaScript.
 
 Only public event materials belong in this repository.
