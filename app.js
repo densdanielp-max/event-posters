@@ -1,19 +1,21 @@
-const posterDialog = document.getElementById('poster-dialog');
-let posterTrigger;
-document.querySelectorAll('[data-open-poster]').forEach(link => link.addEventListener('click', event => {
-  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || typeof posterDialog.showModal !== 'function') return;
+let viewerTrigger;
+document.querySelectorAll('[data-viewer]').forEach(link => link.addEventListener('click', event => {
+  const dialog = document.getElementById(link.dataset.viewer);
+  if (!dialog || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || typeof dialog.showModal !== 'function') return;
   event.preventDefault();
-  posterTrigger = link;
-  posterDialog.showModal();
+  viewerTrigger = link;
+  dialog.showModal();
   document.body.style.overflow = 'hidden';
 }));
-document.getElementById('close-poster').addEventListener('click', () => posterDialog.close());
-posterDialog.addEventListener('click', event => {
-  if (event.target !== posterDialog) return;
-  const r = posterDialog.getBoundingClientRect();
-  if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) posterDialog.close();
-});
-posterDialog.addEventListener('close', () => {
-  document.body.style.overflow = '';
-  posterTrigger?.focus();
+document.querySelectorAll('dialog').forEach(dialog => {
+  dialog.querySelector('[data-close-viewer]').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const r = dialog.getBoundingClientRect();
+    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close();
+  });
+  dialog.addEventListener('close', () => {
+    document.body.style.overflow = '';
+    viewerTrigger?.focus();
+  });
 });

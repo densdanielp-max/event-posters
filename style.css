@@ -13,3 +13,4 @@ dialog{padding:0;border:0;border-radius:12px;max-width:min(95vw,1000px);max-heig
 
 @media(max-width:380px){.logo{width:76px}.header-inner{gap:12px}.nav{gap:12px}.nav .contact-nav{padding:10px}.section-title{align-items:flex-start}.section-title span{text-align:right}}
 
+.additional-feature{margin-top:28px}.brochure-second{border-top:10px solid #e9e9f6}.brochure-artwork .poster-open{max-width:100%}.dialog-tip a{text-decoration:underline;text-underline-offset:3px}

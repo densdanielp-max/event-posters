@@ -15,9 +15,15 @@ This is a registration step in the normal visitor flow, not access control: the 
 
 ## Gallery
 
-`posters.html` displays the supplied property insurance poster with a full-size viewer, original PNG download and contact links taken from the poster. Two additional poster slots are marked coming soon. The event name and remaining two posters have not yet been supplied.
+`posters.html` displays all three materials:
 
-Add the remaining approved poster files and update `posters.html` with their real titles, previews and view/download links. Update the available count and replace the two coming-soon slots.
+1. Updated property insurance artwork, subtle blue rings (2160 x 2700 PNG).
+2. Health & Life Solutions (one-page original PDF plus image preview).
+3. Motor insurance brochure (two-page original PDF plus both page previews).
+
+The PDFs came from the non-inline attachments in the user's "Fw: Flyers for printing" email dated 1 October 2026. Preview PNGs were rendered from every PDF page without editing the artwork. The property PNG was copied from the user's supplied updated file.
+
+Property & Casualty contact links are from the property poster. The main Motor Division contact is 189 Charlotte Street, Lacytown, Georgetown, +592 231 9731 / +592 231 9732, taken from the brochure. Health contact details are pending from the user. No branch list is reproduced on the website.
 
 ## Deployment
 
