@@ -3,22 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Event posters from NALICO and NAFICO.">
-  <title>Event posters | NALICO &amp; NAFICO</title>
-  <style>
-    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #182a38; background: #f5f7f8; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
-    main { max-width: 42rem; padding: 3rem 1.5rem; }
-    .publisher { font-size: .875rem; font-weight: 700; letter-spacing: .08em; }
-    h1 { font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.1; margin: 1.25rem 0; }
-    p { line-height: 1.65; }
-  </style>
+  <meta name="theme-color" content="#1000f5">
+  <meta name="description" content="Explore NALICO & NAFICO's event posters. View and download our property insurance poster, or contact our Property & Casualty team.">
+  <meta property="og:title" content="NALICO & NAFICO | Explore our posters">
+  <meta property="og:description" content="Protect what you've built. View our property insurance poster and connect with our team.">
+  <meta property="og:image" content="https://densdanielp-max.github.io/event-posters/property-insurance.png">
+  <title>Explore our posters | NALICO &amp; NAFICO</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol><symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></symbol><symbol id="expand" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></symbol><symbol id="phone" viewBox="0 0 24 24"><path d="m7 3 3 5-3 2a15 15 0 0 0 7 7l2-3 5 3-1 4C10 22 2 14 3 4Z"/></symbol><symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol><symbol id="chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12 7.8L3 21l1.7-6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 11h8"/></symbol></svg>
+  <a class="skip" href="#posters">Skip to posters</a>
+  <header><div class="wrap header-inner"><a href="#" aria-label="NALICO and NAFICO home"><img class="logo" src="logo.png" width="356" height="222" alt="NALICO NAFICO"></a><nav class="nav" aria-label="Main navigation"><a href="#posters">Our posters</a><a class="contact-nav" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></nav></div></header>
   <main>
-    <p class="publisher">NALICO &amp; NAFICO</p>
-    <h1>Event posters</h1>
-    <p>Our event posters will be available here soon. Please check back for updates.</p>
+    <section class="intro" aria-labelledby="page-title"><div class="wrap intro-grid"><div><p class="eyebrow">The poster collection</p><h1 id="page-title">Protection for<br><span>what matters.</span></h1></div><div class="intro-copy"><p>Explore our insurance posters.<br>Find out more. Connect with our team.</p><p class="hint"><svg class="icon" aria-hidden="true"><use href="#download"/></svg>View, save and share.</p></div></div></section>
+    <section class="collection wrap" id="posters" aria-labelledby="collection-title">
+      <div class="section-title"><h2 id="collection-title">Explore the posters</h2><span>1 available · 2 coming soon</span></div>
+      <div class="poster-list" aria-label="Poster collection">
+        <a class="poster-slot active" href="#property"><span class="slot-number">01</span><span class="slot-label">Property insurance<small>View the poster</small></span><svg class="icon slot-arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+        <div class="poster-slot pending"><span class="slot-number">02</span><span class="slot-label">Coming soon<small>Our next poster</small></span></div>
+        <div class="poster-slot pending"><span class="slot-number">03</span><span class="slot-label">Coming soon<small>More to explore</small></span></div>
+      </div>
+      <article class="feature" id="property" aria-labelledby="property-title">
+        <div class="artwork"><a class="poster-open" href="property-insurance.png" data-open-poster aria-label="View property insurance poster full size"><img src="property-insurance.png" width="2160" height="2700" fetchpriority="high" alt="Property insurance: Protect what you've built. Cover for your home, your business and everything inside them. Contact details are provided below."><span class="zoom-label"><svg class="icon" aria-hidden="true"><use href="#expand"/></svg>Tap to enlarge</span></a></div>
+        <div class="details"><span class="tag">Property insurance</span><h2 id="property-title">Protect what<br><span>you’ve built.</span></h2><p>Cover for your <strong>home</strong>, your <strong>business</strong> and <strong>everything inside them.</strong></p><ul class="cover-points" aria-label="Property insurance"><li>Your home</li><li>Your business</li><li>Your contents</li></ul><div class="actions"><a class="btn btn-primary" href="property-insurance.png" data-open-poster><svg class="icon" aria-hidden="true"><use href="#expand"/></svg>View poster</a><a class="btn" href="property-insurance.png" download="NAFICO-Property-Insurance.png"><svg class="icon" aria-hidden="true"><use href="#download"/></svg>Download</a></div><p class="file-note">High-resolution PNG · 2160 × 2700 px</p><div class="mini-contact">Have a question about property insurance?<br><a href="#contact">Talk to our Property &amp; Casualty team <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a></div></div>
+      </article>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">Let’s talk</p><h2 id="contact-title">Your next step.<br>Our team is here.</h2><p>Speak with our Property &amp; Casualty team about your home or business.</p></div><div class="contact-methods"><div class="contact-item"><span class="method-title"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg>Call us</span><a href="tel:+5922265887">+592 226 5887</a><a href="tel:+5922278717">+592 227 8717</a></div><div class="contact-item"><span class="method-title"><svg class="icon" aria-hidden="true"><use href="#chat"/></svg>WhatsApp</span><a href="https://wa.me/5927523449" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp at +592 752 3449 (opens in a new tab)">+592 752 3449 ↗</a></div><div class="contact-item wide"><span class="method-title"><svg class="icon" aria-hidden="true"><use href="#mail"/></svg>Email the team</span><a href="mailto:property_casualty@naficonalico.com">property_casualty@naficonalico.com</a></div></div></div></section>
   </main>
+  <footer><div class="wrap footer-inner"><strong>NALICO &amp; NAFICO</strong><span>Our posters. All in one place.</span><a href="#page-title">Back to top ↑</a></div></footer>
+  <dialog id="poster-dialog" aria-labelledby="dialog-title"><div class="dialog-bar"><h2 id="dialog-title">Property insurance</h2><div class="dialog-tools"><a class="btn" href="property-insurance.png" download="NAFICO-Property-Insurance.png" aria-label="Download property insurance poster"><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span class="download-label">Download</span></a><button class="btn" id="close-poster" type="button" autofocus>Close <span aria-hidden="true">×</span></button></div></div><img class="dialog-poster" src="property-insurance.png" width="2160" height="2700" loading="lazy" alt="NALICO NAFICO property insurance poster: Protect what you've built. Home, business and contents. Call 592-226-5887 or 592-227-8717; WhatsApp 592-752-3449; email property_casualty@naficonalico.com."><p class="dialog-tip"><a href="property-insurance.png" target="_blank" rel="noopener">Open original image for a closer look ↗</a></p></dialog>
 </body>
 </html>
