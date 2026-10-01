@@ -22,9 +22,7 @@ summary:focus-visible{outline:3px solid #148090;outline-offset:3px}
 .team-contact div{padding-top:14px;color:var(--muted);line-height:1.7}
 .team-contact strong{color:var(--navy)}
 .team-contact a{display:block;color:var(--blue);overflow-wrap:anywhere;margin-top:7px}
-.team-contact a:hover,.general-contact a:hover{text-decoration:underline}
-.general-contact{margin-top:24px;font-size:14px;color:var(--muted)}
-.general-contact p{margin-top:10px}.general-contact a{color:var(--blue);overflow-wrap:anywhere}
+.team-contact a:hover{text-decoration:underline}
 .poster-page footer{border-top:1px solid var(--line)}
 @media(max-width:1000px) and (min-width:701px){.card-content{padding:16px}.poster-grid{gap:12px}.card-content .btn{padding:10px;font-size:12px}}
-@media(max-width:700px){.poster-grid{grid-template-columns:1fr;gap:18px}.gallery-main{padding:24px 0}.gallery-heading h1{font-size:29px}.gallery-heading p{font-size:15px}.poster-page .header-inner{min-height:72px}.poster-page .logo{width:70px}.page-label{font-size:12px}.poster-preview{height:190px}.card-content{padding:20px}.card-content .actions{flex-wrap:nowrap}.card-content .btn{flex:1}.poster-page .footer-inner{flex-direction:row}.general-contact{margin-top:22px}}
+@media(max-width:700px){.poster-grid{grid-template-columns:1fr;gap:18px}.gallery-main{padding:24px 0}.gallery-heading h1{font-size:29px}.gallery-heading p{font-size:15px}.poster-page .header-inner{min-height:72px}.poster-page .logo{width:70px}.page-label{font-size:12px}.poster-preview{height:190px}.card-content{padding:20px}.card-content .actions{flex-wrap:nowrap}.card-content .btn{flex:1}.poster-page .footer-inner{flex-direction:row}}
