@@ -23,7 +23,7 @@ This is a registration step in the normal visitor flow, not access control: the 
 
 The PDFs came from the non-inline attachments in the user's "Fw: Flyers for printing" email dated 1 October 2026. Preview PNGs were rendered from every PDF page without editing the artwork. The property PNG was copied from the user's supplied updated file.
 
-Property & Casualty contact links are from the property poster. The main Motor Division contact is 189 Charlotte Street, Lacytown, Georgetown, +592 231 9731 / +592 231 9732, taken from the brochure. Health contact details are pending from the user. No branch list is reproduced on the website.
+Property & Casualty contact links are from the property poster. The main Motor Division contact is 189 Charlotte Street, Lacytown, Georgetown, +592 231 9731 / +592 231 9732, taken from the brochure. Group Department (Group Health/Life): Ashley Etwaru, aetwaru@naficonalico.com. Customer Service: Leanne Evelyn, levelyn@naficonalico.com. These contacts were supplied by the user. No branch list is reproduced on the website.
 
 ## Deployment
 
