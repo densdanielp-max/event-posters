@@ -1,13 +1,13 @@
 # Event posters
 
-Stable QR destination and poster gallery for NALICO and NAFICO.
+GuyExpo follow-up form landing page and poster gallery for NALICO and NAFICO.
 
 ## Visitor flow
 
 The QR code points to `https://densdanielp-max.github.io/event-posters/`.
-`index.html` automatically redirects to `https://www.facebook.com/naficonalico/` using JavaScript and a meta refresh, with a visible link as a fallback. The existing printed QR code does not change.
+`index.html` embeds the existing Microsoft Form beneath a GuyExpo heading, with a direct form link as a fallback. The same printed QR code still works. The Facebook redirect has been removed.
 
-The Facebook destination is the Nafico/nalico page (page ID 102976425633482). Publicly indexed posts dated October 2026 distinguished it from the older Nalico Nafico page. The QR flow no longer collects contact details through Microsoft Forms.
+The form collects full name, email address, phone number and insurance interest (Property insurance, Motor insurance, and Group Health / Life; multiple selections allowed). The public form contained no Berbice references when checked on 12 November 2026, so its questions and settings were retained. The confirmation message offers the poster gallery as optional reading.
 
 Responses are stored in the form owner's Microsoft account, not in GitHub. Retrieve them in Microsoft Forms > NALICO & NAFICO > Responses > Insights and actions > Open results in Excel. The adjacent dropdown offers Download a copy. Never upload response workbooks or attendee information to this public repository.
 
@@ -31,8 +31,8 @@ Repository: `densdanielp-max/event-posters`. GitHub Pages publishes `main` from 
 
 ## Files
 
-- `index.html`: Facebook redirect and fallback link.
-- `registration.css`: retained layout for the former registration page; not loaded by the redirect.
+- `index.html`: GuyExpo landing page with the Microsoft Form and direct form fallback link.
+- `registration.css`: responsive form layout with a fixed-height outer page to avoid nested scrolling after submission.
 - `posters.html`: poster gallery.
 - `property-insurance.png`: original 2160 x 2700 poster, copied without editing.
 - `logo.png`, `fonts.css`: matching assets from the poster source folder.
@@ -41,4 +41,4 @@ Repository: `densdanielp-max/event-posters`. GitHub Pages publishes `main` from 
 
 Only public event materials belong in this repository.
 
-The gallery uses three compact cards and expandable contacts. `posters.css` contains the compact gallery layout. The previous registration page remains available in Git history if it needs to be restored.
+The gallery uses three compact cards and expandable contacts. `posters.css` contains the compact gallery layout. The prior Facebook redirect remains in Git history. The printable offline form is delivered separately; never commit completed forms or customer information to this public repository.
