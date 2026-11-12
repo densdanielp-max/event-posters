@@ -1,17 +1,17 @@
 # Event posters
 
-Static registration landing page and poster gallery for NALICO and NAFICO.
+Stable QR destination and poster gallery for NALICO and NAFICO.
 
 ## Visitor flow
 
 The QR code points to `https://densdanielp-max.github.io/event-posters/`.
-`index.html` embeds Microsoft Forms and provides a direct form link as a fallback.
-The form requires full name, email address (email format validation), phone number and insurance interest (multiple selections allowed).
-After submission, its thank-you message links to `posters.html`.
+`index.html` automatically redirects to `https://www.facebook.com/naficonalico/` using JavaScript and a meta refresh, with a visible link as a fallback. The existing printed QR code does not change.
+
+The Facebook destination is the Nafico/nalico page (page ID 102976425633482). Publicly indexed posts dated October 2026 distinguished it from the older Nalico Nafico page. The QR flow no longer collects contact details through Microsoft Forms.
 
 Responses are stored in the form owner's Microsoft account, not in GitHub. Retrieve them in Microsoft Forms > NALICO & NAFICO > Responses > Insights and actions > Open results in Excel. The adjacent dropdown offers Download a copy. Never upload response workbooks or attendee information to this public repository.
 
-This is a registration step in the normal visitor flow, not access control: the static gallery and image URLs remain publicly accessible. Microsoft Forms does not provide this page with a verified submission signal, so the site does not use an unverified unlock button or pretend to authenticate visitors.
+The Microsoft Form and previously collected responses remain in the owner's Microsoft account. The gallery and image URLs remain publicly accessible at their existing addresses.
 
 ## Gallery
 
@@ -31,7 +31,8 @@ Repository: `densdanielp-max/event-posters`. GitHub Pages publishes `main` from 
 
 ## Files
 
-- `index.html`, `registration.css`: registration landing page and responsive form layout.
+- `index.html`: Facebook redirect and fallback link.
+- `registration.css`: retained layout for the former registration page; not loaded by the redirect.
 - `posters.html`: poster gallery.
 - `property-insurance.png`: original 2160 x 2700 poster, copied without editing.
 - `logo.png`, `fonts.css`: matching assets from the poster source folder.
@@ -40,4 +41,4 @@ Repository: `densdanielp-max/event-posters`. GitHub Pages publishes `main` from 
 
 Only public event materials belong in this repository.
 
-The follow-up page is intentionally minimal: branding and the four required Microsoft Forms fields. Submission is the end of the requested customer task; the confirmation message offers the gallery as optional reading. The gallery uses three compact cards and expandable contacts. `posters.css` contains the compact gallery layout. Microsoft Forms retains its native confirmation-link step.
+The gallery uses three compact cards and expandable contacts. `posters.css` contains the compact gallery layout. The previous registration page remains available in Git history if it needs to be restored.
